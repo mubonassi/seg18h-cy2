@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){ //DOM - Documento HTML (Document Object Module)
+      // esse código só funciona após a página carregar
+      let txt = document.getElementById('texto');
+      txt.textContent = 'exato, era só duas coisinhas';
+    });
+    function mudarCor(){
+      let txt = document.getElementById('texto');
+      txt.style.backgroundColor = "red"; // alterando atributo (CSS style)
+    }
+    function mudarTamanho(){
+      let img = document.getElementById('img');
+      // img.width = 300;
+      img.setAttribute('width', 300); // setAttribute é a função Universal para alterar atributos
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <p id="texto">Teste</p>
+    <button onclick="mudarCor()">Aperte aqui para UAU</button>
+  </div>
+  <div>
+    <img id="img" src="https://www.yoki.com.br/_next/image?url=https%3A%2F%2Fprodcontent.yoki.com.br%2Fwp-content%2Fuploads%2F2024%2F09%2FSopa-de-Lentilha-770x550-1.jpg&w=1400&q=75" alt=""><br>
+    <button onclick="mudarTamanho()">Mudar tamanho da imagem</button>
+  </div>
+  
+</body>
+</html>

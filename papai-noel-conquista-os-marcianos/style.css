@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to left, #1a881a, rgb(139, 20, 20));
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  background-color: #B22222;
+  color: #FFD700
+}
+
+h2 {
+  background-color: #FFD700;
+  color: #B22222;
+}
+
+h1,h2,#video,#galeria,header,#cadastro,footer,aside,nav{
+  text-align: center;
+}
+
+header{
+  background-image: url("https://img-cdn.publive.online/fit-in/1200x675/indigomusic/media/post_attachments/wp-content/uploads/2024/12/%E2%80%98Santa-Claus-Conquers-the-Martians-Why-This-Infamous-Christmas-Cult-Classic-Deserves-a-Tim-Burton-Remake.png");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.formatarform{
+  background-image: linear-gradient(to right, rgb(248, 142, 142), rgb(198, 248, 198));
+  color: black;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 20px;
+  border-style: ridge groove;
+  border-width: 10px;
+  border-color: red green blue orange;
+}
+
+article, #lista-img{
+  overflow: auto;
+}
+
+#sobre img, #lista-img img{
+  float: left;
+}
+
+.centralizartag{
+  width: fit-content;
+  margin: auto auto;
+}
+
+.container-principal{
+  display: flex;
+  flex-direction: row;
+}
+
+header, aside,nav,aside,section,footer{
+  margin-top: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+aside{
+  padding-top: 20px;
+  width: fit-content;
+  background-color: rgb(178, 207, 110);
+}
+section{
+  flex: 1;
+  margin-left: 10px;
+}
+aside a{
+  width: 150px;
+}
+#confirmar{
+  display: none;
+}

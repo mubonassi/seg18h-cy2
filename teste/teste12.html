@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <label for="img">Link da Imagem</label>
+    <input type="text" id="img"><br>
+    <label for="largura">Largura da Imagem</label>
+    <input type="number" id="largura"><br>
+    <label for="altura">Altura da Imagem</label>
+    <input type="number" id="altura"><br>
+    <button onclick="mostrarImagem()">Mostrar Imagem</button>
+    <p id="txt">
+      <img src="" alt="" id="imagem" width="300px">
+    </p>
+  </div>
+  <script>
+    function mostrarImagem(){
+      let img = document.getElementById('img');
+      let largura = document.getElementById('largura');
+      let altura = document.getElementById('altura');
+      let imagem = document.getElementById('imagem');
+      let txt = document.getElementById('txt');
+
+      txt.textContent = img.value ? "" : "Parça, coloca uma imagem";
+      imagem.src = img.value;
+      imagem.width = largura.value ? largura.value : imagem.naturalWidth;
+      imagem.height = altura.value ? altura.value : imagem.naturalHeight;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste 9</title>
+  </head>
+  <body>
+    <div>
+      <button onclick="receberMensagem()">Receber Variaveis</button>
+      <button onclick="mostrarMensagem()">Mostrar Mensagem</button>
+    </div>
+    <script>
+      let msg = '';
+      function receberMensagem() {
+        msg = prompt('Qual é o seu nome?');
+      }
+      function mostrarMensagem() {
+        alert(msg);
+      }
+    </script>
+
+    <div>
+      <button onclick="mensagemHtml()">Mostrar mensagem abaixo!</button>
+      <p id="mensagem"></p>
+    </div>
+    <script>
+      function mensagemHtml() {
+        let mensagem = document.getElementById('mensagem');
+        mensagem.textContent =
+          'Eu sou uma mensagem no site! Weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee 🎶🎶🎶';
+      }
+    </script>
+
+    <div>
+      <input type="text" id="txtMensagem" />
+      <button onclick="receberMensagem()">Receber Mensagem</button>
+      <p id="mensagem2"></p>
+    </div>
+    <script>
+      function receberMensagem() {
+        let txtMensagem = document.getElementById('txtMensagem');
+        let mensagem2 = document.getElementById('mensagem2');
+        mensagem2.textContent = txtMensagem.value;
+      }
+    </script>
+  </body>
+</html>
